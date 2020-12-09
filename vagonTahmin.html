@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script type="text/javascript">
+
+  vagon= Math.floor(Math.random()*10)+1;
+ count=3;
+deneme=1;
+ while(1)
+ {
+
+   sayi= prompt('Bas hirsizi yakalamak icin 1 ile 10 arasinda bir sayi tahmin ediniz:');
+if(count==0) { alert('Hirsizi belirtilen deneme hakkinizda bulamadiniz'); break;}
+else  if (sayi>vagon)
+
+
+    alert('Tuttugunuz sayidan daha kucuk sayi tahmin ediniz '+ count+' hakkiniz kaldi');
+
+    else if (sayi<vagon)
+    alert('Tuttugunuz sayidan daha buyuk sayi tahmin ediniz '+ count+' hakkiniz kaldi');
+
+    else if (sayi==vagon){
+   alert('Tebrikler hirsizi '+deneme+' denemede yakaladiniz'); break;}
+
+count=count-1;
+deneme=deneme+1;
+
+ }
+
+</script>
+</head>
+<body>
+</body>
+</html>
